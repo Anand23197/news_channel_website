@@ -1,0 +1,107 @@
+html{
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana ;
+}
+body{
+    background-color: honeydew;
+}
+
+header{
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(119, 119, 203);
+}
+footer{
+    background-color: rgb(119, 119, 203);
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 20px;
+    position: sticky;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+#navigate{
+ position: sticky;
+ top: 0%;
+ z-index: 1;   
+}
+.menu{
+    margin: 0%;
+    background-color: rgba(0,0,0,0.9);
+}
+.menu>li a{
+ color: whitesmoke;
+ font-size: 20px;
+ text-decoration: none;
+}
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: green;
+    border-radius: 5px;
+}
+
+.menu li:nth-last-child(1),li:nth-last-child(2){
+    float: right;
+    margin-right: 10px;
+}
+#indianews, #worldnews{
+    margin: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.news{
+    position: relative;
+    border: 2px solid rgb(47, 255, 57);
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+}
+
+.news img{
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+.overlay{
+    position: absolute;
+    bottom: 0%;
+    width: 280px;
+    max-width: 280px;
+    overflow: hidden;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: .5s ease-in;
+    background-color: rgba(94, 80, 80, 0.3);
+}
+.news:hover .overlay{
+    opacity: 1;
+}
+#support{
+    position: absolute;
+    float: right;
+    top:2%;
+    right: 2px;
+    margin: 5px;
+}
+#support a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(114, 110, 110);
+    border-radius: 5px;
+}
+
+#support a:hover{
+    color: white;
+    background-color: black;
+}
